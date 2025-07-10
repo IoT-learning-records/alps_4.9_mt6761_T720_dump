@@ -19,5 +19,5 @@
 - Branch: full_k61v1_64_bsp-userdebug-9-Android-userdebug.Android.20201028.185505-test-keys
 - Repo: android_xx_dump
 ### hardware
--tp gt911
--dp st7701
+- tp： gt911
+- dp： st7701
