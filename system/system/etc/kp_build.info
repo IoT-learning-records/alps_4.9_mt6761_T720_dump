@@ -1,0 +1,91 @@
+
+软件信息:
+-----------------------------------------------
+内部项目名      :  T720KU
+内部软件版本    :  720AFKACH1_KU_V027_[userdebug]
+内部硬件版本    :  T720_MB_P1_V01
+
+客户            :  Android
+客户型号        :  xx
+客户软件版本    :  720AFKACH1_KU_V027
+
+基本配置:  6761
+-----------------------------------------------
+ 1. 支持sim卡个数:  1
+ 2. 屏幕         :  480X800
+                 :  
+ 3. TP           :  GT9XX
+ 4. 摄像头       :      [ ov7251_mipi_raw  ]
+ 5. 闪光灯       :  dummy_flashlight [GPIO]
+ 6. 支持Flash    :  KMQE60013M_B318 KMQE60013B_B318 KMFE60012M_B214 
+ 7. GPS          :  MTK_GPS_MT6631
+ 8. 晶体         :  CO-CLOCK共晶体
+ 9. CMMB         :  
+10. NFC          :  no
+11. WIFI         :  CONSYS_MT6761
+12. BT           :  MTK_CONSYS_MT6761
+13. FM           :  MT6631_FM
+14. G-SENSOR     :  yes
+15. M-SENSOR     :  akl akm
+17. 背后摸       :  无
+18. MODEM        :  T720_modem
+19. 语言         :  
+20. 其它         :  
+
+编译时代码信息:
+-----------------------------------------------
+路径: /code6/T720_6761_90_trunk
+工作副本根目录: /code6/T720_6761_90_trunk
+URL: svn://192.168.40.241/MT6739_71_61_ETC/p0mp1v5_137/branches/K733_T720
+Relative URL: ^/branches/K733_T720
+版本库根: svn://192.168.40.241/MT6739_71_61_ETC/p0mp1v5_137
+版本库 UUID: 7090cdd2-b4be-394a-84fa-d4b5878e3da3
+版本: 1145
+节点种类: 目录
+调度: 正常
+最后修改的作者: linguoxiong
+最后修改的版本: 1145
+最后修改的时间: 2020-10-27 19:19:33 +0800 (二, 2020-10-27)
+
+路径: .
+工作副本根目录: /code6/T720_6761_90_trunk
+URL: svn://192.168.40.241/MT6739_71_61_ETC/p0mp1v5_137/branches/K733_T720/KP_PROD/T720_KU
+Relative URL: ^/branches/K733_T720/KP_PROD/T720_KU
+版本库根: svn://192.168.40.241/MT6739_71_61_ETC/p0mp1v5_137
+版本库 UUID: 7090cdd2-b4be-394a-84fa-d4b5878e3da3
+版本: 1145
+节点种类: 目录
+调度: 正常
+最后修改的作者: linguoxiong
+最后修改的版本: 1145
+最后修改的时间: 2020-10-27 19:19:33 +0800 (二, 2020-10-27)
+
+路径: /code6/T720_6761_90_trunk/kfree
+工作副本根目录: /code6/T720_6761_90_trunk/kfree
+URL: svn://192.168.40.241/kfreeAndroid50/trunk
+Relative URL: ^/trunk
+版本库根: svn://192.168.40.241/kfreeAndroid50
+版本库 UUID: 7febd3a9-c56e-454f-bd64-7e9ea8a821d2
+版本: 3854
+节点种类: 目录
+调度: 正常
+最后修改的作者: zhaoxinwang
+最后修改的版本: 3782
+最后修改的时间: 2020-10-13 17:32:21 +0800 (二, 2020-10-13)
+
+
+编译路径:
+-----------------------------------------------
+编译机器IP: 192.168.40.66
+
+/code6/T720_6761_90_trunk/KP_PROD/T720_KU/ver_720AFKACH1_KU_64.mk
+     : 
+     : ./ProjectConfig_k61v1_64_bsp.mk
+     : ./proj_app_config.mk
+     : ../Public/config_gps ../Public/config_NoOTG ./config_prj/ ./config_prj_scan/
+     : ../Public/config_sys_uart_mutil/ ./config_ver/ ./config_root/
+     : k61v1_64_bsp
+     : ../Public/config_dws/T720_P1_V01.dws
+     : features_switch.h
+     : ../Public/config_flash/6761_custom_MemoryDevice_16_1.h
+     : 

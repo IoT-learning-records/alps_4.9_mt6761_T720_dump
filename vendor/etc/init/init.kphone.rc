@@ -1,0 +1,92 @@
+# Kphone project .rc configure
+
+on post-fs
+    #K-free
+    chmod 0777 /mnt/vendor/protect_s
+
+    # kphone : add prod_info folder
+    mkdir /mnt/vendor/protect_s/prod_info 0771 system system 
+    chown system system /mnt/vendor/protect_s/prod_info
+    chmod 0777 /mnt/vendor/protect_s/prod_info
+    #K-free
+
+property_service_init
+    #K-free
+    chmod 0777 /mnt/vendor/protect_s
+
+    # kphone : add prod_info folder
+    mkdir /mnt/vendor/protect_s/prod_info 0771 system system 
+    chown system system /mnt/vendor/protect_s/prod_info
+    chmod 0777 /mnt/vendor/protect_s/prod_info
+    #K-free
+
+on boot
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO0_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO1_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO2_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO3_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO5_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO6_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO7_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO8_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO9_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO10_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO12_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GPIO13_NAME
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/KP_GPIO
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/GlucRxOnOff
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/KP_ADC_CHANNEL
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/KP_LDO
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/OTG_MODE
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/KP_CONTROL_GPIO_MODE
+    chmod 0666 /proc/driver/camera_info
+    chmod 0666 /sys/bus/platform/drivers/mtkfb/lcm_info
+    chmod 0666 /sys/devices/platform/touch/tp_info
+    chmod 0666 /sys/devices/platform/cust_driver/driver/HI_POWER
+	chmod 0666 /sys/devices/platform/cust_driver/driver/HI_OTG
+	chmod 0666 /sys/devices/platform/cust_driver/driver/CHARGE_TYPE
+	chmod 0666 /sys/bus/platform/drivers/CUSTDriver/DMR_EN
+	chmod 0666 /sys/bus/platform/drivers/CUSTDriver/UART_SCAN_EN
+	chmod 0666 /sys/bus/platform/drivers/CUSTDriver/USB_NET_SW
+	
+on post-fs-data
+    chmod 0666 /dev/ttyMT0
+    chmod 0666 /dev/ttyMT1
+    chmod 0666 /dev/ttyMT2
+    chmod 0666 /dev/ttyS0
+    chmod 0666 /dev/ttyS1
+    chmod 0666 /dev/ttyS2
+    chmod 0666 /dev/ttysWK0
+    chmod 0666 /dev/ttysWK1
+    chmod 0666 /dev/ttysWK2
+   	chmod 0666 /dev/ttysWK3
+    chmod 0666 /sys/bus/platform/drivers/CUSTDriver/KP_GPIO
+    chmod 0666 /proc/driver/camera_info
+    chmod 0666 /sys/bus/platform/drivers/mtkfb/lcm_info
+    chmod 0666 /sys/devices/platform/touch/tp_info	
+    chmod 0666 /sys/devices/platform/cust_driver/driver/HI_POWER
+    chmod 0666 /sys/devices/platform/cust_driver/driver/HI_OTG
+	chmod 0666 /sys/devices/platform/cust_driver/driver/CHARGE_TYPE
+    chmod 0666 /sys/bus/platform/drivers/mt6370_pmu_ldo/MT6370_LDO_EN
+    chmod 0666 /sys/class/flashlight/mt-flash-led1/strobe_brightness
+    chmod 0666 /sys/class/leds/red/brightness
+    chmod 0666 /sys/class/leds/blue/brightness
+    chmod 0666 /sys/class/leds/green/brightness
+	chmod 0666 /dev/snd/pcmC0D30c
+	chmod 0666 /dev/snd/pcmC0D30p
+	chmod 0666 /dev/snd/pcmC0D31p
+	chmod 0666 /dev/snd/pcmC0D32c
+
+
+# KPHONE:fengmeiyin FOR PRELOAD FILE TO INTERNEL CARD ETC.
+service preloadfile  /system/bin/preloadfile.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:preloadfile:s0
+	
+on property:sys.boot_completed=1
+    start preloadfile	
+# KPHONE:fengmeiyin FOR PRELOAD FILE TO INTERNEL CARD ETC.
+

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="block_offensive_words" value="true" />
+    <boolean name="fuzzy_pinyin_uan_uang" value="false" />
+    <boolean name="enable_auto_capitalization" value="true" />
+    <boolean name="enable_english_prediction" value="true" />
+    <boolean name="enable_vibrate_on_keypress" value="true" />
+    <boolean name="chinese_digits_mixed_input" value="true" />
+    <string name="keyboard_height_ratio">1.0</string>
+    <boolean name="USER_SELECTED_KEYBOARD" value="true" />
+    <boolean name="enable_share_snippets" value="true" />
+    <boolean name="switch_to_other_imes" value="true" />
+    <boolean name="enable_handwriting_feedback" value="false" />
+    <boolean name="enable_chinese_prediction" value="true" />
+    <boolean name="enable_user_metrics" value="false" />
+    <boolean name="import_user_contacts" value="false" />
+    <boolean name="enable_scrub_move" value="true" />
+    <boolean name="auto_space" value="true" />
+    <long name="pref_key_access_points_hint_shown_timestamp" value="1512649735600" />
+    <int name="contacts_regular_import_interval_millis" value="86400000" />
+    <boolean name="enable_incremental_gesture_input" value="true" />
+    <boolean name="hide_english_keyboard" value="false" />
+    <boolean name="enable_orientation_aware_preference" value="false" />
+    <boolean name="next_word_prediction" value="true" />
+    <boolean name="enable_auto_language_switching" value="true" />
+    <int name="contacts_first_time_delay_millis" value="60000" />
+    <boolean name="credentials_valid" value="false" />
+    <int name="pref_key_access_points_hint_shown_times" value="0" />
+    <boolean name="show_launcher_icon" value="false" />
+    <boolean name="fuzzy_pinyin_f_h" value="false" />
+    <boolean name="show_english_keyboard" value="true" />
+    <boolean name="always_true" value="true" />
+    <boolean name="enable_gesture_auto_commit" value="false" />
+    <string name="ACTIVE_IME.SOFT.und-x-dashboard">dashboard</string>
+    <boolean name="fuzzy_pinyin_r_l" value="false" />
+    <boolean name="new_word_update_notify" value="true" />
+    <boolean name="enable_emoji_alt_physical_key" value="true" />
+    <boolean name="enable_auto_space_smart_punctuation" value="true" />
+    <string name="pinyin_scheme">quanpin</string>
+    <string name="handwriting_stroke_width_scale">1.0</string>
+    <boolean name="pref_key_auto_correction" value="true" />
+    <string name="ACTIVE_IME.SOFT.zh-CN">zh_cn_pinyin_9key</string>
+    <boolean name="enable_double_space_period" value="true" />
+    <boolean name="show_language_switch_key" value="true" />
+    <boolean name="enable_spatial_model" value="true" />
+    <boolean name="fuzzy_pinyin_z_zh" value="true" />
+    <boolean name="enable_scrub_delete" value="false" />
+    <boolean name="enable_voice_input" value="true" />
+    <int name="contacts_task_delay_millis" value="1800000" />
+    <string name="key_long_press_delay">300</string>
+    <boolean name="enable_suggest_emojis" value="true" />
+    <boolean name="always_false" value="false" />
+    <boolean name="enable_gesture_input" value="true" />
+    <boolean name="fuzzy_pinyin_c_ch" value="true" />
+    <boolean name="pref_show_recent_emoji_in_symbol_keyboard" value="false" />
+    <boolean name="enable_popup_on_keypress" value="true" />
+    <boolean name="show_canonical_romanization" value="false" />
+    <int name="download_notification_visibility" value="2" />
+    <boolean name="sync" value="false" />
+    <boolean name="pref_key_allow_download_with_battery" value="true" />
+    <string name="ACTIVE_IME.SOFT.und-Latn-x-password">password</string>
+    <boolean name="enable_sound_on_keypress" value="false" />
+    <boolean name="allow_get_location" value="true" />
+    <boolean name="pref_gesture_preview_trail" value="true" />
+    <boolean name="fuzzy_pinyin_en_eng" value="true" />
+    <int name="contacts_retry_from_failure_interval_millis" value="28800000" />
+    <string name="one_handed_mode">0</string>
+    <boolean name="fuzzy_pinyin_s_sh" value="true" />
+    <boolean name="fuzzy_pinyin_ian_iang" value="false" />
+    <boolean name="fuzzy_pinyin_an_ang" value="true" />
+    <boolean name="enable_sc_tc_conversion" value="false" />
+    <long name="daily_ping_task_next_run_time" value="1512675379710" />
+    <boolean name="chinese_english_mixed_input" value="true" />
+    <boolean name="china_preload_notice_shown" value="true" />
+    <boolean name="fuzzy_pinyin_k_g" value="false" />
+    <boolean name="show_suggestions" value="true" />
+    <string name="keyboard_slide_sensitivity_ratio">1.0</string>
+    <boolean name="pref_key_save_non_prime_keyboard_type" value="true" />
+    <boolean name="fuzzy_pinyin_l_n" value="false" />
+    <boolean name="pref_key_allow_download_with_metered_network" value="false" />
+    <string name="handwriting_timeout_ms">1000</string>
+    <string name="ACTIVE_LANGUAGE_1169726820">zh-CN</string>
+    <boolean name="enable_one_tap_to_search" value="false" />
+    <long name="english_periodical_task_next_run_time" value="1512682885588" />
+    <string name="additional_keyboard_theme"></string>
+    <boolean name="fuzzy_pinyin" value="false" />
+    <boolean name="new_word_update" value="false" />
+    <boolean name="enable_shortcuts_dictionary" value="true" />
+    <boolean name="fuzzy_pinyin_in_ing" value="true" />
+    <boolean name="enable_spell_correction" value="false" />
+    <boolean name="enable_gesture_input_persistent" value="true" />
+    <boolean name="pref_key_use_personalized_dicts" value="true" />
+</map>

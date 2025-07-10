@@ -1,0 +1,41 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.actionable_compatible_property.enabled=true
+ro.secure=0
+security.perf_harden=1
+ro.allow.mock.location=0
+ro.debuggable=1
+tombstoned.max_tombstone_count=50
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.appimageformat=lz4
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.shared=speed
+dalvik.vm.dex2oat-minidebuginfo=true
+debug.atrace.tags.enableflags=0
+ro.telephony.sim.count=2
+ro.audio.usb.period_us=16000
+ro.mediatek.platform=MT6761
+ro.mediatek.version.branch=alps-mp-p0.mp1
+ro.mediatek.version.release=alps-mp-p0.mp1-V5.137.2
+persist.vendor.connsys.coredump.mode=2
+ro.com.android.mobiledata=true
+ro.base_build=noah
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Wed Oct 28 18:54:20 CST 2020
+ro.bootimage.build.date.utc=1603882460
+ro.bootimage.build.fingerprint=alps/full_k61v1_64_bsp/k61v1_64_bsp:9/Android/Android10281854:userdebug/test-keys
+persist.sys.usb.config=adb

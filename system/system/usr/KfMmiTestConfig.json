@@ -1,0 +1,1241 @@
+{
+	"name":"工厂测试",
+	"name_en":"Mmi test",
+	"comp":"com.kfree.mmitest/.common.ActListMenu",
+	"visible":1,
+	"items":[
+			{
+				"name":"主板自动测试",
+				"name_en":"Board auto test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"para":"autoTest",
+				"visible":1,
+				"items":[
+					{
+						"name":"软件版本",
+						"name_en":"Software version",
+						"comp":"com.kfree.mmitest/.items.SoftwareDetection",
+						"ResultID":"B-version",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"内存卡",
+						"name_en":"SD card",
+						"comp":"com.kfree.mmitest/.items.MemoryCard",
+						"ResultID":"B-memorycard",
+						"Timeout": 10,
+						"visible":0
+					},
+					{
+						"name":"振动",
+						"name_en":"vibrator",
+						"comp":"com.kfree.mmitest/.items.VibratorTest",
+						"ResultID":"B-vibrator",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"后置摄像头",
+						"name_en":"BackCamera test",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest:mainCamera",
+						"ResultID":"B-backcamera",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"Speaker",
+						"name_en":"Speaker",
+						"comp":"com.kfree.mmitest/.items.SpeakerTest",
+						"param":"track=dual",
+						"ResultID":"B-speaker",
+						"visible":1
+					},
+					{
+						"name":"13pingOTG",
+						"name_en":"pingOTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:pingOTG",
+						"ResultID":"B-pingotg",
+						"visible":0
+					},
+					{
+						"name":"背光/按键背光",
+						"name_en":"Backlight",
+						"comp":"com.kfree.mmitest/.items.BackLight",
+						"ResultID":"B-backlight",
+						"visible":0
+					},
+					{
+						"name":"快充测试",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"param":"fast_charge",
+						"ResultID":"B-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"按键测试",
+						"name_en":"KEY",
+						"comp":"com.kfree.mmitest/.items.KeyButtonTest",
+						"param":"key=26/电源键:key=132/音量加:key=133/音量减:key=131/扫描键",
+						"ResultID":"B-key",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"加速度",
+						"name_en":"Acceleration",
+						"comp":"com.kfree.mmitest/.items.Acceleration",
+						"ResultID":"B-acc",
+						"Timeout": 5,
+						"visible":1
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"B-haisimic",
+						"visible":0
+					},
+					{
+						"name":"WIFI",
+						"name_en":"WIFI",
+						"comp":"com.kfree.mmitest/.items.WifiTest",
+						"ResultID":"B-wifi",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"蓝牙",
+						"name_en":"BT",
+						"comp":"com.kfree.mmitest/.items.BluetoothTest",
+						"ResultID":"B-bt",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"GPS",
+						"name_en":"GPS",
+						"comp":"com.kfree.mmitest/.items.GpsTest",
+						"ResultID":"B-gps",
+						"Timeout": 60,
+						"visible":2
+					},
+					{
+						"name":"指南针",
+						"name_en":"Compass test",
+						"comp":"com.kfree.mmitest/.items.CompassTest",
+						"ResultID":"B-compass",
+						"visible":0
+					},
+					{
+						"name":"耳机回路",
+						"name_en":"Headset test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"B-headset",
+						"Timeout": 0,
+						"param":"3",
+						"visible":0
+					},
+					{
+						"name":"镭射灯",
+						"name_en":"Laser Light",
+						"comp":"com.kfree.mmitest/.items.LaserlighttTest",
+						"ResultID":"B-laser",
+						"Timeout": 0,
+						"param":"/sys/bus/platform/drivers/mt6370_pmu_ldo/MT6370_LDO_EN",
+						"visible":0
+					},
+					{
+						"name":"前置摄像头",
+						"name_en":"FrontCamera test",
+						"comp":"com.kfree.mmitest/.items.RearCameraTest",
+						"ResultID":"B-frontcamera",
+						"param":"0",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"B-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"SIM卡",
+						"name_en":"SIM test",
+						"comp":"com.kfree.mmitest/.items.SimTest",
+						"ResultID":"B-sim",
+						"Timeout": 10,
+						"param":"-140",
+						"visible":1
+					},				
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"B-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"B-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"指示灯",
+						"name_en":"TricolorLight test",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"B-tricolorlight",
+						"param":"led=5",
+						"Timeout": 0,
+						"visible":2
+					},					
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest",
+						"ResultID":"B-lightSensitive",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"B-Wireless",
+						"visible":0
+					},
+					{
+						"name":"OTG",
+						"name_en":"OTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:OTG",
+						"ResultID":"B-otg",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"扫描头",
+						"name_en":"ScanHead test",
+						"comp":"com.kfree.mmitest/.items.ScanHeadTestUserSysBC",
+						"ResultID":"B-scanhead",
+						"visible":2
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"B-testresultupload",
+						"param":"T720KU",
+						"TestType":"board_test",
+						"visible":1
+					}
+				]
+			},
+			{
+				"name":"主板手动测试",
+				"name_en":"Board manul test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"visible":1,
+				"items":[
+					{
+						"name":"软件版本",
+						"name_en":"Software version",
+						"comp":"com.kfree.mmitest/.items.SoftwareDetection",
+						"ResultID":"B-version",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"内存卡",
+						"name_en":"SD card",
+						"comp":"com.kfree.mmitest/.items.MemoryCard",
+						"ResultID":"B-memorycard",
+						"Timeout": 10,
+						"visible":0
+					},
+					{
+						"name":"振动",
+						"name_en":"vibrator",
+						"comp":"com.kfree.mmitest/.items.VibratorTest",
+						"ResultID":"B-vibrator",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"后置摄像头",
+						"name_en":"BackCamera test",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest:mainCamera",
+						"ResultID":"B-backcamera",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"Speaker",
+						"name_en":"Speaker",
+						"comp":"com.kfree.mmitest/.items.SpeakerTest",
+						"param":"track=dual",
+						"ResultID":"B-speaker",
+						"visible":1
+					},
+					{
+						"name":"13pingOTG",
+						"name_en":"pingOTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:pingOTG",
+						"ResultID":"B-pingotg",
+						"visible":0
+					},
+					{
+						"name":"背光/按键背光",
+						"name_en":"Backlight",
+						"comp":"com.kfree.mmitest/.items.BackLight",
+						"ResultID":"B-backlight",
+						"visible":0
+					},
+					{
+						"name":"快充测试",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"param":"fast_charge",
+						"ResultID":"B-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"按键测试",
+						"name_en":"KEY",
+						"comp":"com.kfree.mmitest/.items.KeyButtonTest",
+						"param":"key=26/电源键:key=132/音量加:key=133/音量减:key=131/扫描键",
+						"ResultID":"B-key",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"加速度",
+						"name_en":"Acceleration",
+						"comp":"com.kfree.mmitest/.items.Acceleration",
+						"ResultID":"B-acc",
+						"Timeout": 5,
+						"visible":1
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"B-haisimic",
+						"visible":0
+					},
+					{
+						"name":"WIFI",
+						"name_en":"WIFI",
+						"comp":"com.kfree.mmitest/.items.WifiTest",
+						"ResultID":"B-wifi",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"蓝牙",
+						"name_en":"BT",
+						"comp":"com.kfree.mmitest/.items.BluetoothTest",
+						"ResultID":"B-bt",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"GPS",
+						"name_en":"GPS",
+						"comp":"com.kfree.mmitest/.items.GpsTest",
+						"ResultID":"B-gps",
+						"Timeout": 60,
+						"visible":2
+					},
+					{
+						"name":"指南针",
+						"name_en":"Compass test",
+						"comp":"com.kfree.mmitest/.items.CompassTest",
+						"ResultID":"B-compass",
+						"visible":0
+					},
+					{
+						"name":"耳机回路",
+						"name_en":"Headset test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"B-headset",
+						"Timeout": 0,
+						"param":"3",
+						"visible":0
+					},
+					{
+						"name":"镭射灯",
+						"name_en":"Laser Light",
+						"comp":"com.kfree.mmitest/.items.LaserlighttTest",
+						"ResultID":"B-laser",
+						"Timeout": 0,
+						"param":"/sys/bus/platform/drivers/mt6370_pmu_ldo/MT6370_LDO_EN",
+						"visible":0
+					},
+					{
+						"name":"前置摄像头",
+						"name_en":"FrontCamera test",
+						"comp":"com.kfree.mmitest/.items.RearCameraTest",
+						"ResultID":"B-frontcamera",
+						"param":"0",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"B-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"SIM卡",
+						"name_en":"SIM test",
+						"comp":"com.kfree.mmitest/.items.SimTest",
+						"ResultID":"B-sim",
+						"Timeout": 10,
+						"param":"-140",
+						"visible":1
+					},				
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"B-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"B-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"指示灯",
+						"name_en":"TricolorLight test",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"B-tricolorlight",
+						"param":"led=5",
+						"Timeout": 0,
+						"visible":2
+					},
+					
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest",
+						"ResultID":"B-lightSensitive",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"B-Wireless",
+						"visible":0
+					},
+					{
+						"name":"OTG",
+						"name_en":"OTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:OTG",
+						"ResultID":"B-otg",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"扫描头",
+						"name_en":"ScanHead test",
+						"comp":"com.kfree.mmitest/.items.ScanHeadTestUserSysBC",
+						"ResultID":"B-scanhead",
+						"visible":2
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"B-testresultupload",
+						"param":"T720KU",
+						"TestType":"board_test",
+						"visible":1
+					}
+				]
+			},		
+			{
+				"name":"副板自动测试",
+				"name_en":"SubBoard auto test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"para":"autoTest",
+				"visible":1,
+				"items":[
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"S-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"S-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"S-lightSensitive",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"S-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"S-Wireless",
+						"visible":0
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"S-haisimic",
+						"visible":0
+					},
+					{
+						"name":"充电",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"ResultID":"S-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"以太网测试",
+						"name_en":"Etherlink",
+						"comp":"com.kfree.mmitest/.items.EtherlinkTest",
+						"ResultID":"S-Etherlink",
+						"visible":1
+					},
+					{
+						"name":"以太网MAC地址测试",
+						"name_en":"Etherlink_MAC",
+						"comp":"com.kfree.mmitest/.items.EtherlinkMacTest",
+						"ResultID":"S-Etherlink_MAC",
+						"visible":1
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"S-testresultupload",
+						"param":"T720KU",
+						"TestType":"subplate_test",
+						"visible":1
+					}
+				]
+			},
+			{
+				"name":"副板手动测试",
+				"name_en":"SubBoard manul test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"visible":1,
+				"items":[
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"S-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"S-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"S-lightSensitive",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"S-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"S-Wireless",
+						"visible":0
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"S-haisimic",
+						"visible":0
+					},
+					{
+						"name":"充电",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"ResultID":"S-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"以太网测试",
+						"name_en":"Etherlink",
+						"comp":"com.kfree.mmitest/.items.EtherlinkTest",
+						"ResultID":"S-Etherlink",
+						"visible":1
+					},
+					{
+						"name":"以太网MAC地址测试",
+						"name_en":"Etherlink_MAC",
+						"comp":"com.kfree.mmitest/.items.EtherlinkMacTest",
+						"ResultID":"S-Etherlink_MAC",
+						"visible":1
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"S-testresultupload",
+						"param":"T720KU",
+						"TestType":"subplate_test",
+						"visible":1
+					}
+				]
+			},
+			{
+				"name":"整机自动测试",
+				"name_en":"Product auto test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"para":"autoTest",
+				"visible":1,
+				"items":[
+					{
+						"name":"软件版本",
+						"name_en":"Software version",
+						"comp":"com.kfree.mmitest/.items.SoftwareDetection",
+						"ResultID":"P-version",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"内存卡",
+						"name_en":"SD card",
+						"comp":"com.kfree.mmitest/.items.MemoryCard",
+						"ResultID":"P-memorycard",
+						"Timeout": 10,
+						"visible":0
+					},
+					{
+						"name":"振动",
+						"name_en":"vibrator",
+						"comp":"com.kfree.mmitest/.items.VibratorTest",
+						"ResultID":"P-vibrator",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"后置摄像头",
+						"name_en":"BackCamera test",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest:mainCamera",
+						"ResultID":"P-backcamera",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"Speaker",
+						"name_en":"Speaker",
+						"comp":"com.kfree.mmitest/.items.SpeakerTest",
+						"param":"track=dual",
+						"ResultID":"P-speaker",
+						"visible":1
+					},
+					{
+						"name":"13pingOTG",
+						"name_en":"pingOTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:pingOTG",
+						"ResultID":"P-pingotg",
+						"visible":0
+					},
+					{
+						"name":"背光/按键背光",
+						"name_en":"Backlight",
+						"comp":"com.kfree.mmitest/.items.BackLight",
+						"ResultID":"P-backlight",
+						"visible":1
+					},
+					{
+						"name":"快充测试",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"param":"fast_charge",
+						"ResultID":"P-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"按键测试",
+						"name_en":"KEY",
+						"comp":"com.kfree.mmitest/.items.KeyButtonTest",
+						"param":"key=26/电源键:key=132/音量加:key=133/音量减:key=131/扫描键",
+						"ResultID":"P-key",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"加速度",
+						"name_en":"Acceleration",
+						"comp":"com.kfree.mmitest/.items.Acceleration",
+						"ResultID":"P-acc",
+						"Timeout": 5,
+						"visible":1
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"P-haisimic",
+						"visible":0
+					},
+					{
+						"name":"WIFI",
+						"name_en":"WIFI",
+						"comp":"com.kfree.mmitest/.items.WifiTest",
+						"ResultID":"P-wifi",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"蓝牙",
+						"name_en":"BT",
+						"comp":"com.kfree.mmitest/.items.BluetoothTest",
+						"ResultID":"P-bt",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"GPS",
+						"name_en":"GPS",
+						"comp":"com.kfree.mmitest/.items.GpsTest",
+						"ResultID":"P-gps",
+						"Timeout": 60,
+						"visible":2
+					},
+					{
+						"name":"指南针",
+						"name_en":"Compass test",
+						"comp":"com.kfree.mmitest/.items.CompassTest",
+						"ResultID":"P-compass",
+						"visible":0
+					},
+					{
+						"name":"耳机回路",
+						"name_en":"Headset test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"P-headset",
+						"Timeout": 0,
+						"param":"3",
+						"visible":0
+					},
+					{
+						"name":"镭射灯",
+						"name_en":"Laser Light",
+						"comp":"com.kfree.mmitest/.items.LaserlighttTest",
+						"ResultID":"P-laser",
+						"Timeout": 0,
+						"param":"/sys/bus/platform/drivers/mt6370_pmu_ldo/MT6370_LDO_EN",
+						"visible":0
+					},
+					{
+						"name":"前置摄像头",
+						"name_en":"FrontCamera test",
+						"comp":"com.kfree.mmitest/.items.RearCameraTest",
+						"ResultID":"P-frontcamera",
+						"param":"0",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"LCD",
+						"name_en":"LCD",
+						"comp":"com.kfree.mmitest/.items.LcdTest",
+						"ResultID":"P-lcd",
+						"visible":1
+					},
+					
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"P-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"触摸屏",
+						"name_en":"touch screen",
+						"comp":"com.kfree.mmitest/.items.CtpTestCrosswise",
+						"ResultID":"P-touchscreen",
+						"visible":1
+					},
+					{
+						"name":"SIM卡",
+						"name_en":"SIM test",
+						"comp":"com.kfree.mmitest/.items.SimTest",
+						"ResultID":"P-sim",
+						"Timeout": 10,
+						"visible":1
+					},				
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"P-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"P-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"指示灯",
+						"name_en":"TricolorLight test",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"P-tricolorlight",
+						"param":"led=5",
+						"Timeout": 0,
+						"visible":2
+					},
+					
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest",
+						"ResultID":"P-lightSensitive",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"P-Wireless",
+						"visible":0
+					},
+					{
+						"name":"OTG",
+						"name_en":"OTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:OTG",
+						"ResultID":"P-otg",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"扫描头",
+						"name_en":"ScanHead test",
+						"comp":"com.kfree.mmitest/.items.ScanHeadTestUserSysBC",
+						"ResultID":"P-scanhead",
+						"visible":2
+					},
+					{
+						"name":"血糖仪",
+						"name_en":"GlucTest",
+						"comp":"com.kfree.gluctest/.GlucTest",
+						"ResultID":"P-GlucTest",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"P-testresultupload",
+						"param":"T720KU",
+						"TestType":"board_test",
+						"visible":1
+					}
+				]
+			},
+			{
+				"name":"整机手动测试",
+				"name_en":"Product manul test",
+				"comp":"com.kfree.mmitest/.common.ActTestButtons",
+				"visible":1,
+				"items":[
+					{
+						"name":"软件版本",
+						"name_en":"Software version",
+						"comp":"com.kfree.mmitest/.items.SoftwareDetection",
+						"ResultID":"P-version",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"内存卡",
+						"name_en":"SD card",
+						"comp":"com.kfree.mmitest/.items.MemoryCard",
+						"ResultID":"P-memorycard",
+						"Timeout": 10,
+						"visible":0
+					},
+					{
+						"name":"振动",
+						"name_en":"vibrator",
+						"comp":"com.kfree.mmitest/.items.VibratorTest",
+						"ResultID":"P-vibrator",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"后置摄像头",
+						"name_en":"BackCamera test",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest:mainCamera",
+						"ResultID":"P-backcamera",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"Speaker",
+						"name_en":"Speaker",
+						"comp":"com.kfree.mmitest/.items.SpeakerTest",
+						"param":"track=dual",
+						"ResultID":"P-speaker",
+						"visible":1
+					},
+					{
+						"name":"13pingOTG",
+						"name_en":"pingOTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:pingOTG",
+						"ResultID":"P-pingotg",
+						"visible":0
+					},
+					{
+						"name":"背光/按键背光",
+						"name_en":"Backlight",
+						"comp":"com.kfree.mmitest/.items.BackLight",
+						"ResultID":"P-backlight",
+						"visible":1
+					},
+					{
+						"name":"快充测试",
+						"name_en":"charger",
+						"comp":"com.kfree.mmitest/.items.ChargerTest",
+						"param":"fast_charge",
+						"ResultID":"P-charger",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"按键测试",
+						"name_en":"KEY",
+						"comp":"com.kfree.mmitest/.items.KeyButtonTest",
+						"param":"key=26/电源键:key=132/音量加:key=133/音量减:key=131/扫描键",
+						"ResultID":"P-key",
+						"Timeout": 0,
+						"visible":1
+					},
+					{
+						"name":"加速度",
+						"name_en":"Acceleration",
+						"comp":"com.kfree.mmitest/.items.Acceleration",
+						"ResultID":"P-acc",
+						"Timeout": 5,
+						"visible":1
+					},
+					{
+						"name":"HaiSiMic",
+						"name_en":"HaiSi Mic",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiMicTest",
+						"ResultID":"P-haisimic",
+						"visible":0
+					},
+					{
+						"name":"WIFI",
+						"name_en":"WIFI",
+						"comp":"com.kfree.mmitest/.items.WifiTest",
+						"ResultID":"P-wifi",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"蓝牙",
+						"name_en":"BT",
+						"comp":"com.kfree.mmitest/.items.BluetoothTest",
+						"ResultID":"P-bt",
+						"Timeout": 10,
+						"visible":1
+					},
+					{
+						"name":"GPS",
+						"name_en":"GPS",
+						"comp":"com.kfree.mmitest/.items.GpsTest",
+						"ResultID":"P-gps",
+						"Timeout": 60,
+						"visible":2
+					},
+					{
+						"name":"指南针",
+						"name_en":"Compass test",
+						"comp":"com.kfree.mmitest/.items.CompassTest",
+						"ResultID":"P-compass",
+						"visible":0
+					},
+					{
+						"name":"耳机回路",
+						"name_en":"Headset test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"P-headset",
+						"Timeout": 0,
+						"param":"3",
+						"visible":0
+					},
+					{
+						"name":"镭射灯",
+						"name_en":"Laser Light",
+						"comp":"com.kfree.mmitest/.items.LaserlighttTest",
+						"ResultID":"P-laser",
+						"Timeout": 0,
+						"param":"/sys/bus/platform/drivers/mt6370_pmu_ldo/MT6370_LDO_EN",
+						"visible":0
+					},
+					{
+						"name":"前置摄像头",
+						"name_en":"FrontCamera test",
+						"comp":"com.kfree.mmitest/.items.RearCameraTest",
+						"ResultID":"P-frontcamera",
+						"param":"0",
+						"Timeout": 15,
+						"visible":0
+					},
+					{
+						"name":"LCD",
+						"name_en":"LCD",
+						"comp":"com.kfree.mmitest/.items.LcdTest",
+						"ResultID":"P-lcd",
+						"visible":1
+					},
+					
+					{
+						"name":"闪光灯",
+						"name_en":"Flashlight test",
+						"comp":"com.kfree.mmitest/.items.FlashLight",
+						"ResultID":"P-flashlight",
+						"param":"/sys/class/flashlight/mt-flash-led1/strobe_brightness",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"触摸屏",
+						"name_en":"touch screen",
+						"comp":"com.kfree.mmitest/.items.CtpTestCrosswise",
+						"ResultID":"P-touchscreen",
+						"visible":1
+					},
+					{
+						"name":"SIM卡",
+						"name_en":"SIM test",
+						"comp":"com.kfree.mmitest/.items.SimTest",
+						"ResultID":"P-sim",
+						"Timeout": 10,
+						"visible":1
+					},				
+					{
+						"name":"主音频回路",
+						"name_en":"AudioLoopback test",
+						"comp":"com.kfree.mmitest/.items.AudioLoopbackMB",
+						"ResultID":"P-audioLoopback",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"NFC测试",
+						"name_en":"NFC test",
+						"comp":"com.kfree.mmitest/.items.NFCTest",
+						"ResultID":"P-nfc",
+						"Timeout": 15,
+						"param":"1",
+						"visible":0
+					},
+					{
+						"name":"指示灯",
+						"name_en":"TricolorLight test",
+						"comp":"com.kfree.mmitest/.items.TricolorLightTest",
+						"ResultID":"P-tricolorlight",
+						"param":"led=5",
+						"Timeout": 0,
+						"visible":2
+					},
+					
+					{
+						"name":"光感红外",
+						"name_en":"LightSensitive infrared",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.HaiSiTest",
+						"ResultID":"P-lightSensitive",
+						"visible":0
+					},
+					{
+						"name":"无线充电",
+						"name_en":"Wireless charging",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.WirelessCharger",
+						"ResultID":"P-Wireless",
+						"visible":0
+					},
+					{
+						"name":"OTG",
+						"name_en":"OTG",
+						"comp":"com.kfree.mmitest/.items.ExtTest",
+						"param":"com.kfree.mmitesthaisi:com.kfree.mmitesthaisi.OtgTest:OTG",
+						"ResultID":"P-otg",
+						"Timeout": 0,
+						"visible":0
+					},
+					{
+						"name":"扫描头",
+						"name_en":"ScanHead test",
+						"comp":"com.kfree.mmitest/.items.ScanHeadTestUserSysBC",
+						"ResultID":"P-scanhead",
+						"visible":2
+					},
+					{
+						"name":"血糖仪",
+						"name_en":"GlucTest",
+						"comp":"com.kfree.gluctest/.GlucTest",
+						"ResultID":"P-GlucTest",
+						"visible":1
+					},
+					{
+						"name":"测试结果上传",
+						"name_en":"TestResultUpload",
+						"comp":"com.kfree.mmitest/.items.TestResultUpload",
+						"ResultID":"P-testresultupload",
+						"param":"T720KU",
+						"TestType":"board_test",
+						"visible":1
+					}
+				]
+			},
+			{
+				"name":"耦合测试",
+				"name_en":"Coupling Test",
+				"comp":"com.android.dialer/.app.DialtactsActivity",
+				"visible":1
+			},
+			{
+				"name":"编译配置信息",
+				"name_en":"Build info",
+				"comp":"com.kfree.mmitest/.common.DeviceTest",
+				"visible":1
+			},
+			{
+				"name":"本机硬件配置",
+				"name_en":"Detect hardware info",
+				"comp":"com.kfree.mmitest/.common.ShowDeviceConfig",
+				"visible":1
+			},
+			{
+				"name":"恢复出厂设置",
+				"name_en":"Factory data reset",
+				"comp":"com.kfree.mmitest/.common.MasterClear",
+				"visible":1
+			},
+			{
+				"name":"查看IMEI号",
+				"name_en":"Check IMEI",
+				"comp":"com.kfree.mmitest/.common.CheckImei",
+				"visible":1
+			},
+			{
+				"name":"打开工程模式",
+				"name_en":"Open engineer mode",
+				"comp":"com.mediatek.engineermode/.EngineerMode",
+				"visible":1
+			}
+	]
+}
