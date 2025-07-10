@@ -1,0 +1,20 @@
+## full_k61v1_64_bsp-userdebug 9 Android userdebug.Android.20201028.185505 test-keys
+- Manufacturer: android
+- Platform: mt6761
+- Codename: xx
+- Brand: Android
+- Flavor: full_k61v1_64_bsp-userdebug
+- Release Version: 9
+- Kernel Version: 4.9.117
+- Id: Android
+- Incremental: userdebug.Android.20201028.185505
+- Tags: 720AFKACH1_KU_V027
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: false
+- Treble Device: true
+- Locale: zh-CN
+- Screen Density: 240
+- Fingerprint: alps/full_k61v1_64_bsp/k61v1_64_bsp:9/Android/Android10281854:userdebug/test-keys
+- OTA version: 
+- Branch: full_k61v1_64_bsp-userdebug-9-Android-userdebug.Android.20201028.185505-test-keys
+- Repo: android_xx_dump
